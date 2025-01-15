@@ -1,8 +1,9 @@
+DEPS = soda
 compile: main.c 
-	 gcc main.c -o ming
+	 g++ main.c -o $(DEPS)
 
-run: ming
-	 ./ming
+run: $(DEPT)
+	 ./$(DEPS)
 
-clean: ming
-	 rm ming
+clean: $(DEPS)
+	 rm $(DEPS)
